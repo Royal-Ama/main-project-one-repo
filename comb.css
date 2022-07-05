@@ -1,0 +1,167 @@
+body {
+    width: 100vw;
+    position: relative;
+    background: rgb(174, 219, 245);  
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar {
+    background: rgb(174, 219, 245);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(104, 7, 20);
+}
+.active, .menu-bar ul li:hover {
+    background: rgb(108, 116, 231);
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1 {
+    display: none;
+    font-family: 'Playfair Display', serif;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(174, 219, 245);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+    font-family: 'Arima', cursive;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(5, 2, 177);
+    border-radius: 0;
+    text-align: left;
+    font-family: 'Arima', cursive;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+     color: rgb(174, 219, 245);
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(174, 219, 245);
+    font-family: 'Arima', cursive;
+}
+h1 {
+  color: white;
+  font-size: 22vmin;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  padding-left: 40px;
+  margin-left: 150px;
+}
+h2{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: rgb(5, 2, 177);
+  width: 35vmax;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(174, 219, 245);
+}
+.card {
+    background: rgb(174, 219, 245);
+    width: 300px;
+    height: 400px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    border: 1px dashed rgb(5, 2, 177);
+}
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.car-1 {
+    background-image: url('pharm2.jpg');
+}
+.car-2 {
+    background-image: url('pharm2.jpg');
+}
+.car-3 {
+    background-image: url('pharm2.jpg');
+}
+.card h2 {
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+.card p {
+    padding: 10px;
+}
+.card:hover {
+    background-color: rgb(103, 158, 230);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
