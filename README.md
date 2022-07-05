@@ -1,2 +1,2 @@
 # main-project-one-repo
- First project, I am corrently working on.
+ First project, I am currently working on.
