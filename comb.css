@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     position: relative;
-    background: rgb(174, 219, 245);  
+    background: rgb(243, 246, 248);  
   }
   * {
     padding: 0;
@@ -14,7 +14,7 @@ body {
     font-family: sans-serif;
 }
 .menu-bar {
-    background: rgb(174, 219, 245);
+    background: rgb(0, 100, 0);
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
@@ -33,10 +33,10 @@ body {
 }
 .menu-bar ul li a{
     text-decoration: none;
-    color: rgb(104, 7, 20);
+    color: rgb(253, 250, 250);
 }
 .active, .menu-bar ul li:hover {
-    background: rgb(108, 116, 231);
+    background: rgb(49, 248, 49);
     border-radius: 3px;
 }
 .menu-bar .fa{
@@ -49,7 +49,7 @@ body {
 .menu-bar ul li:hover .sub-menu-1 {
     display: block;
     position: absolute;
-    background: rgb(174, 219, 245);
+    background: rgb(0, 100, 0);
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -61,7 +61,7 @@ body {
 .menu-bar ul li:hover .sub-menu-1 ul li{
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted rgb(5, 2, 177);
+    border-bottom: 1px dotted rgb(244, 244, 247);
     border-radius: 0;
     text-align: left;
     font-family: 'Arima', cursive;
@@ -70,7 +70,7 @@ body {
     border-bottom: none;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
-     color: rgb(174, 219, 245);
+     color: rgb(246, 249, 250);
 }
 .fa-angle-right{
     float: right;
@@ -83,11 +83,11 @@ body {
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background: rgb(174, 219, 245);
+    background: rgb(0, 100, 0);
     font-family: 'Arima', cursive;
 }
 h1 {
-  color: white;
+  color: rgb(253, 22, 22);
   font-size: 22vmin;
   line-height: 1;
   font-weight: bold;
@@ -105,7 +105,7 @@ h2{
   position: absolute;
   top: 0;
   left: 0;
-  fill: rgb(5, 2, 177);
+  fill: rgb(0, 100, 0);
   width: 35vmax;
   z-index: -1;
   animation: move 10s ease-in-out infinite;
@@ -124,7 +124,7 @@ h2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(174, 219, 245);
+    background-color: rgb(49, 248, 49);
 }
 .card {
     background: rgb(174, 219, 245);
